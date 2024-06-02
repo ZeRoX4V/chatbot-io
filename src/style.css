@@ -1,0 +1,147 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c2f33;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bot-list,
+.user-list {
+  padding: 20px;
+}
+
+.bot-item,
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.bot-item.selected,
+.bot-item:hover {
+  background: #7289da;
+}
+
+.bot-avatar,
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-list {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #23272a;
+  color: #fff;
+}
+
+.message-input-container {
+  display: flex;
+  padding: 10px;
+  background: #2c2f33;
+}
+
+.message-input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background: #40444b;
+  color: #fff;
+}
+
+.message-input-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #7289da;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.message.sent {
+  justify-content: flex-end;
+}
+
+.message.received {
+  justify-content: flex-start;
+}
+
+.message .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #7289da;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.message .content {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #40444b;
+}
+
+.message .time {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #72767d;
+}
+
+/* New Styles for the Clear Buttons */
+.conversation-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #2c2f33;
+  border-top: 1px solid #40444b;
+}
+
+.conversation-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background: #7289da;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.conversation-buttons button:hover {
+  background: #5a6bbd;
+}
