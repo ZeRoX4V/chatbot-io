@@ -1,7 +1,6 @@
-console.log("message.js loaded"); // Log pour vérifier le chargement du fichier
-
-
+//Fonction pour afficher un message dans la conv
 export function displayMessage(text, type, name = 'You', avatar = '', time = new Date().toLocaleTimeString()) {
+
     const messageList = document.getElementById('message-list');
 
     const messageElement = document.createElement('div');
@@ -9,7 +8,7 @@ export function displayMessage(text, type, name = 'You', avatar = '', time = new
 
     const avatarElement = document.createElement('div');
     avatarElement.className = 'avatar';
-    avatarElement.textContent = name[0];
+
     if (avatar) {
         avatarElement.style.backgroundImage = `url(${avatar})`;
     }
@@ -21,13 +20,13 @@ export function displayMessage(text, type, name = 'You', avatar = '', time = new
     const timeElement = document.createElement('div');
     timeElement.className = 'time';
     timeElement.textContent = time;
-
     messageElement.appendChild(avatarElement);
     messageElement.appendChild(contentElement);
     messageElement.appendChild(timeElement);
     messageList.appendChild(messageElement);
 }
 
+//Fonction pour faire défiler la conversation jusqu'en bas
 export function scrollToBottom(element) {
     element.scrollTop = element.scrollHeight;
 }
