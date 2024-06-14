@@ -6,7 +6,7 @@ const API_KEY_WEATHER = '6b0b8e1b679b272fd1922f93b1bed175';
 // Bot Kev
 const jokeBot = {
     name: 'Kev',
-    avatar: 'public/images/kev.png',
+    avatar: '/public/images/kev.png',
     actions: [
         {
             // Commande 1 du bot
