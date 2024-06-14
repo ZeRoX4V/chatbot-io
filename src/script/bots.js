@@ -6,7 +6,7 @@ const API_KEY_WEATHER = '6b0b8e1b679b272fd1922f93b1bed175';
 // Bot Kev
 const jokeBot = {
     name: 'Kev',
-    avatar: '/public/images/kev.png',
+    avatar: '/images/kev.png', // Modifié pour être relatif à la racine du serveur
     actions: [
         {
             // Commande 1 du bot
@@ -46,7 +46,7 @@ const jokeBot = {
 // Bot météo
 const weatherBot = {
     name: 'Météo',
-    avatar: 'public/images/Toobo.png',
+    avatar: '/images/Toobo.png', // Modifié pour être relatif à la racine du serveur
     actions: [
         {
             // Commande 1 du bot
@@ -91,7 +91,7 @@ const weatherBot = {
 // Bot SpaceX
 const SpaceXBot = {
     name: 'SpaceX',
-    avatar: 'public/images/elon.png',
+    avatar: '/images/elon.png', // Modifié pour être relatif à la racine du serveur
     actions: [
         {
             // Commande 1 du bot
@@ -160,3 +160,4 @@ bots.forEach(bot => {
         response: async (message) => `Bonjour mon roi c'est ${bot.name} votre fidèle serviteur.`
     });
 });
+

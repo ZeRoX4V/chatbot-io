@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!message || !selectedBot) return;
 
         const time = new Date().toLocaleTimeString();
-        const sentMessage = { text: message, type: 'sent', name: 'You', avatar: 'public/images/kc.png', time };
+        const sentMessage = { text: message, type: 'sent', name: 'You', avatar: '/images/kc.png', time };
         conversations[selectedBot].push(sentMessage);
-        displayMessage(message, 'sent', 'You', 'public/images/kc.png', time);
+        displayMessage(message, 'sent', 'You', '/images/kc.png', time);
         messageInput.value = '';
         scrollToBottom(messageList);
 

@@ -16,15 +16,10 @@ export const home = () => {
         <div class="user-list">
           <div class="user-item" id="open-link">
           <a href="https://mario-kart-3-js.vercel.app/#r=RXW84m" target="_blank">
-            <img src="public/images/kc.png" alt="User" class="user-avatar" />
+            <img src="/images/kc.png" alt="User" class="user-avatar" />
             </a>
             <span>Le Roi</span>       
           </div>
-          <script>
-          document.getElementById('open-link').addEventListener('click', function() {
-              window.open('https://mario-kart-3-js.vercel.app/#r=RXW84', '_blank');
-          });
-      </script>
         </div>
       </div>
       <div class="chat-container">
@@ -41,8 +36,4 @@ export const home = () => {
     </div>
   `;
 };
-
-
-
-console.log("home.js loaded");
 
